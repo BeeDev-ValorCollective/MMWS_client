@@ -1,0 +1,27 @@
+
+@import './css/base/core.less';
+
+body {
+    background-color: var(--light);
+    #root {
+        .app_wrapper {
+            .flexcolumn();
+            background-color: var(--light);
+
+            main {
+                .flexcolumn();
+                
+                img {
+                    max-width: 400px;
+                }
+
+                .badlink {
+                    .flexcolumn();
+                    img {
+                        max-width: 600px;
+                    }
+                }
+            }
+        }
+    }
+}
