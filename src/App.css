@@ -267,6 +267,9 @@ body #root .app_wrapper {
   align-items: center;
   background-color: var(--light);
 }
+body #root .app_wrapper header nav span a {
+  font-family: var(--headerfont);
+}
 body #root .app_wrapper main {
   display: flex;
   flex-direction: column;
@@ -284,4 +287,19 @@ body #root .app_wrapper main .badlink {
 }
 body #root .app_wrapper main .badlink img {
   max-width: 600px;
+}
+body #root .app_wrapper footer {
+  background-color: var(--primary);
+}
+body #root .app_wrapper footer h3 {
+  color: var(--light);
+  font-family: var(--headerfont);
+}
+body #root .app_wrapper footer h4,
+body #root .app_wrapper footer ul,
+body #root .app_wrapper footer li,
+body #root .app_wrapper footer h5,
+body #root .app_wrapper footer p {
+  font-family: var(--bodyfont);
+  color: var(--light);
 }

@@ -13,8 +13,8 @@ const Index = React.lazy(() => import('./views/Home'));
 const BadLink = React.lazy(() => import('./views/BadLink'));
 
 // IMPORT COMPONENTS
-// import NavBar from './components/NavBar/Navbar';
-// import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 // import ScrollUpButton from './components/ScrollUpComponent/ScrollUp';
 
 // Import custom hooks
@@ -50,7 +50,7 @@ function AppContent() {
     <div className="app_wrapper">
 
       {/* NAVBAR COMPONENT */}
-      
+      <Header />
 
       {/* ROUTES */}
       <Routes>
@@ -94,7 +94,7 @@ function AppContent() {
    
 
       {/* FOOTER COMPONENT */}
-
+          <Footer />
 
     </div>
   );

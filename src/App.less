@@ -8,6 +8,16 @@ body {
             .flexcolumn();
             background-color: var(--light);
 
+            header {
+                nav {
+                    span {
+                        a {
+                            font-family: var(--headerfont);
+                        }
+                    }
+                }
+            }
+
             main {
                 .flexcolumn();
                 
@@ -20,6 +30,17 @@ body {
                     img {
                         max-width: 600px;
                     }
+                }
+            }
+            footer {
+                background-color: var(--primary);
+                h3 {
+                    color: var(--light);
+                    font-family: var(--headerfont);
+                }
+                h4, ul, li, h5, p {
+                    font-family: var(--bodyfont);
+                    color: var(--light);
                 }
             }
         }
