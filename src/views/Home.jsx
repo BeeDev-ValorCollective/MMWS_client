@@ -5,6 +5,7 @@ import Services from '../components/Home/Services'
 import Testimonials from '../components/Home/Testimonials'
 
 import MMWSIcon from "../assets/MMWS_logo_transparent.png"
+import '../components/Home/Home.css'
 
 export default function Home() {
 
