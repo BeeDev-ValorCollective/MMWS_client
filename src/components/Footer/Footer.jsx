@@ -4,6 +4,10 @@ import './Footer.css'
 
 
 export default function Footer() {
+    const PhoneLink = import.meta.env.VITE_LINK_PHONE
+    const PhoneDisplay = import.meta.env.VITE_DISPLAY_PHONE
+    const EmailLink = import.meta.env.VITE_LINK_EMAIL
+    const AddressLine2 = import.meta.env.VITE_ADDRESS_LINE2
 
     return(
         <>
@@ -29,15 +33,17 @@ export default function Footer() {
                 <h3>Contact</h3>
                 <div className="phone">
                     <h5>Phone:</h5>
-                    <p>(704) 251-5625</p>
+                    <a href={ PhoneLink }>{ PhoneDisplay }</a>
                 </div>
                 <div className="email">
                     <h5>E-Mail:</h5>
-                    <p>bpotter@metalmanweldingservices.com</p>
+                    <a href={`mailto:${ EmailLink }`}>
+                            { EmailLink }
+                        </a>
                 </div>
                 <div className="address">
                     <h5>Address:</h5>
-                    <p>North Carolina</p>
+                    <p>{ AddressLine2 }</p>
                 </div>
                 <div className="socials">
                     <h5>LinkedIn:</h5>

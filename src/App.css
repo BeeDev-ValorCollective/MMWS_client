@@ -303,7 +303,8 @@ body #root .app_wrapper footer h4,
 body #root .app_wrapper footer ul,
 body #root .app_wrapper footer li,
 body #root .app_wrapper footer h5,
-body #root .app_wrapper footer p {
+body #root .app_wrapper footer p,
+body #root .app_wrapper footer a {
   font-family: var(--bodyfont);
   color: var(--light);
 }

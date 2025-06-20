@@ -25,3 +25,7 @@ li {
 .phone, .email, .address, .socials {
     margin: .5em 0;
 }
+a {
+    font-size: .8em;
+    text-transform: none;
+}
