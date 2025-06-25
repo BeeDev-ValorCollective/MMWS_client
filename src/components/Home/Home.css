@@ -17,8 +17,53 @@ main {
 }
 .cta {
     background-color: #1f1f1fb6;
-    height: 400px;
-    width: 400px;
+    width: 25%;
     align-self: flex-start;
     margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+h4 {
+    color: var(--light);
+    text-transform: uppercase;
+    margin: 1.5em 1em;
+}
+p {
+    margin: 1.5em 1em;
+    color: var(--light);
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 2em .5em;
+}
+.gallery {
+    background: var(--buttonfill);
+    border: 2px solid var(--light);
+}
+.buttons .contact {
+    color: var(--light)
+}
+button {
+    background: none;
+    padding: .5em 1em;
+}
+.contact {
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+}
+.contact-gradient {
+    border-image-source: var(--buttonoutline);
 }
