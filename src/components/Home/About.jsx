@@ -1,5 +1,4 @@
 import Jeff from '../../assets/about_img.jpg'
-import './Home.css'
 
 export default function HomeAbout() {
 

@@ -5,6 +5,9 @@ main {
     align-items: center;
     width: 100%;
 }
+h3 {
+    text-decoration: underline;
+}
 
 /* CTA Section CSS */
 .cta_wrapper {
@@ -142,4 +145,76 @@ button {
 }
 .service_name {
     padding: .5em 1.5em;
+}
+
+/* Testimonials Section css */
+.testimonial_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+}
+.quote, .author {
+    color: var(--light)
+}
+
+/* Testimonial - Stars */
+.stars {
+  display: inline-block;
+  line-height: 1;
+  font-size: 1.1rem;          /* Size of the stars */
+  color: var(--secondary);             /* Filled star color */
+}
+.stars .empty {
+  opacity: 0.25;              /* Faded look for un-filled stars */
+}
+.sr-only {                    /* Accessible text */
+  position: absolute;
+  left: -9999px;
+}
+
+/* Testimonial - Quotations */
+.quote {
+  display: block;
+  position: relative;
+  font-style: italic;
+  margin: 1em 0;
+  padding: 0.5em 1em;
+}
+
+.quote::before,
+.quote::after {
+  font-size: 2.5rem;
+  color: var(--accent);
+  font-weight: bold;
+  position: absolute;
+  font-family: serif;
+}
+
+.quote::before {
+  content: "“";
+  left: -0.5em;
+  top: -0.2em;
+}
+
+.quote::after {
+  content: "”";
+  right: -0.5em;
+  bottom: -0.2em;
 }
