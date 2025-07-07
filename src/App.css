@@ -279,6 +279,7 @@ body #root .app_wrapper main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 body #root .app_wrapper main img {
   max-width: 400px;

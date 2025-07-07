@@ -103,3 +103,43 @@ button {
 .content p {
     color: var(--dark);
 }
+
+/* Services section css */
+
+.services_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+.services_wrapper h3{
+    margin: 1em 1em 3em 1em;
+}
+.home_services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px 0 var(--secondary), 0 4px 10px 0 var(--secondary);
+    margin: 1em;
+    background-color: var(--primary);
+    width: 30%;
+    border-radius: 10%;
+}
+.the_service {
+    box-shadow: 0 2px 6px 0 var(--secondary), 0 4px 10px 0 var(--secondary);
+    width: 100%;
+    border-radius: 10% 10% 0% 0%;
+}
+.service_name {
+    padding: .5em 1.5em;
+}
