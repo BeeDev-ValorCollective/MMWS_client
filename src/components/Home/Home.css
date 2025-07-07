@@ -5,6 +5,8 @@ main {
     align-items: center;
     width: 100%;
 }
+
+/* CTA Section CSS */
 .cta_wrapper {
     display: flex;
     flex-direction: column;
@@ -13,7 +15,7 @@ main {
     background-image: url('../../assets/cta_bg.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 100%
+    width: 100%;
 }
 .cta {
     background-color: #1f1f1fb6;
@@ -66,4 +68,38 @@ button {
 }
 .contact-gradient {
     border-image-source: var(--buttonoutline);
+}
+
+/* About Section CSS */
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+.jeff {
+    margin: 2em;
+    background-image: url('../../assets/about_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 2.5em;
+    border-radius: 15%;
+    box-shadow: 0 4px 8px 0 var(--dark), 0 6px 20px 0 var(--dark);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    color: var(--dark);
+    padding: 3em;
+}
+.content p {
+    color: var(--dark);
 }
