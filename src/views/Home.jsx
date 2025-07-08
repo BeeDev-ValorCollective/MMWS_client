@@ -1,10 +1,10 @@
+import { Link } from 'react-router-dom'
 // Home View Page
 import CTA from '../components/Home/CallToAction'
 import About from '../components/Home/About'
 import Services from '../components/Home/Services'
 import Testimonials from '../components/Home/Testimonials'
 
-import MMWSIcon from "../assets/MMWS_logo_transparent.png"
 import '../components/Home/Home.css'
 
 export default function Home() {
@@ -15,7 +15,9 @@ export default function Home() {
             <About />
             <Services />
             <Testimonials />
-            <button className="contact_button">Contact Us Today and Get a Quote</button>
+            <Link to='/contact'>
+                <button className="contact_button contact-gradient">Contact Us Today and Get a Quote</button>
+            </Link>
         </main>
     )
 }

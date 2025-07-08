@@ -8,6 +8,14 @@ main {
 h3 {
     text-decoration: underline;
 }
+.contact_button {
+    font-size: 2em;
+    margin: 1em;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 4px;
+    box-shadow: 0 4px 6px 0 var(--dark), 0 6px 10px 0 var(--dark);
+}
 
 /* CTA Section CSS */
 .cta_wrapper {
@@ -162,6 +170,7 @@ button {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    margin: 2em 1em;
 }
 .testimonial {
     display: flex;
@@ -169,20 +178,24 @@ button {
     justify-content: center;
     align-items: center;
     background-color: var(--primary);
+    padding: 2em;
+    box-shadow: 0 4px 8px 0 var(--dark), 0 6px 10px 0 var(--accent);
+    margin: 1em 1em 2em 1em;
 }
 .quote, .author {
-    color: var(--light)
+    color: var(--light);
+    width: 250px;
 }
 
 /* Testimonial - Stars */
 .stars {
   display: inline-block;
   line-height: 1;
-  font-size: 1.1rem;          /* Size of the stars */
+  font-size: 1.5em;          /* Size of the stars */
   color: var(--secondary);             /* Filled star color */
 }
 .stars .empty {
-  opacity: 0.25;              /* Faded look for un-filled stars */
+  opacity: 0.10;              /* Faded look for un-filled stars */
 }
 .sr-only {                    /* Accessible text */
   position: absolute;
