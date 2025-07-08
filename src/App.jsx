@@ -7,9 +7,10 @@ import './App.css'
 
 // IMPORT VIEWS (Lazy load for speed)
 const Index = React.lazy(() => import('./views/Home'));
-// const Services = React.lazy(() => import('./views/Services'));
-// const Contact = React.lazy(() => import('./views/Contact'));
-// const Mission = React.lazy(() => import('./views/Mission'));
+const Services = React.lazy(() => import('./views/Services'));
+const Contact = React.lazy(() => import('./views/Contact'));
+const About = React.lazy(() => import('./views/About'));
+const Portfolio = React.lazy(() => import('./views/Portfolio'));
 const BadLink = React.lazy(() => import('./views/BadLink'));
 
 // IMPORT COMPONENTS
@@ -56,42 +57,29 @@ function AppContent() {
       <Routes>
 
         {/* HOME PAGE */}
-        <Route
-          path='/'
-          element={
-            <Navigate to='/home' replace />
-          }
-        />
+        <Route path='/' element={<Navigate to='/home' replace />}/>
 
         {/* LANDING PAGE */}
-        <Route 
-          path='/home'
-          element={
-            <Index />
-          }
-        />
+        <Route path='/home' element={<Index />}/>
 
         {/* SERVICES PAGE */}
-        
+        <Route path='/services' element={<Services />}/>
 
         {/* CONTACT PAGE */}
-        
+        <Route path='/contact' element={<Contact />}/>
 
-        {/* MISSION PAGE */}
-        
+        {/* PORTFOLIO PAGE */}
+        <Route path='/portfolio' element={<Portfolio />}/>
+
+        {/* ABOUT PAGE */}
+        <Route path='/about' element={ <About />} />
 
         {/* CATCH ALL FOR BAD LINKS */}
-        <Route 
-          path='*'
-          element={
-            <BadLink />
-          }
-        />
+        <Route path='*' element={<BadLink />} />
 
       </Routes>
 
       {/* GO TO TOP COMPONENT */}
-   
 
       {/* FOOTER COMPONENT */}
           <Footer />
