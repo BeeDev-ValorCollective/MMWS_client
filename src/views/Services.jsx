@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import '../components/Services/services.css'
+
 import ServicesInfoCard from "../components/Services/Cards/ServicesInfoCard";
 import ServicesHeader from "../components/Services/ServicesHeader";
 
@@ -29,9 +31,9 @@ export default function Services() {
     if (error) return <p>Error: {error}</p>;
 
     return(
-        <>
+        <main>
         <ServicesHeader services={services} />
         <ServicesInfoCard services={services} />
-        </>
+        </main>
     )
 }
