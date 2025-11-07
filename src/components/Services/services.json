@@ -1,0 +1,58 @@
+[
+    {
+       "id": 1,
+       "service": "Ornamental",
+       "img": "https://images.beedev-hosting.com/mmws/service_01.jpg",
+       "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, corrupti eius labore libero ut odio incidunt doloremque iusto in magni vero eaque sint cum quidem! Iste odit quibusdam distinctio voluptatum?",
+       "is_active": true 
+    },
+    {
+       "id": 2,
+       "service": "Structural",
+       "img": "https://images.beedev-hosting.com/mmws/service_01.jpg",
+       "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, corrupti eius labore libero ut odio incidunt doloremque iusto in magni vero eaque sint cum quidem! Iste odit quibusdam distinctio voluptatum?",
+       "is_active": true 
+    },
+    {
+       "id": 3,
+       "service": "Fabrication",
+       "img": "https://images.beedev-hosting.com/mmws/service_01.jpg",
+       "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, corrupti eius labore libero ut odio incidunt doloremque iusto in magni vero eaque sint cum quidem! Iste odit quibusdam distinctio voluptatum?",
+       "is_active": true 
+    },
+    {
+       "id": 4,
+       "service": "Blacksmithing",
+       "img": "https://images.beedev-hosting.com/mmws/service_01.jpg",
+       "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, corrupti eius labore libero ut odio incidunt doloremque iusto in magni vero eaque sint cum quidem! Iste odit quibusdam distinctio voluptatum?",
+       "is_active": true 
+    },
+    {
+       "id": 5,
+       "service": "Machinist",
+       "img": "https://images.beedev-hosting.com/mmws/service_01.jpg",
+       "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, corrupti eius labore libero ut odio incidunt doloremque iusto in magni vero eaque sint cum quidem! Iste odit quibusdam distinctio voluptatum?",
+       "is_active": true 
+    },
+    {
+       "id": 6,
+       "service": "",
+       "img": "",
+       "description": "",
+       "is_active": false 
+    },
+    {
+       "id": 7,
+       "service": "",
+       "img": "",
+       "description": "",
+       "is_active": false 
+    },
+    {
+       "id": 8,
+       "service": "",
+       "img": "",
+       "description": "",
+       "is_active": false 
+    }
+]

@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 95%;
+    padding: 2em;
+}
+.left {
+    padding-left: 1em;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+li {
+    margin: .5em 0;
+}
+.right, .phone, .email, .address, .socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.phone, .email, .address, .socials {
+    margin: .5em 0;
+}
+a {
+    font-size: .8em;
+    text-transform: none;
+}

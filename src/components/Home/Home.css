@@ -1,0 +1,233 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+h3 {
+    text-decoration: underline;
+}
+.contact_button {
+    font-size: 2em;
+    margin: 1em;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 4px;
+    box-shadow: 0 4px 6px 0 var(--dark), 0 6px 10px 0 var(--dark);
+}
+
+/* CTA Section CSS */
+.cta_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/cta_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+.cta {
+    background-color: #1f1f1fb6;
+    width: 25%;
+    align-self: flex-start;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+h4 {
+    color: var(--light);
+    text-transform: uppercase;
+    margin: 1.5em 1em;
+}
+p {
+    margin: 1.5em 1em;
+    color: var(--light);
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 2em .5em;
+}
+.gallery {
+    background: var(--buttonfill);
+    border: 2px solid var(--light);
+}
+.buttons .contact {
+    color: var(--light)
+}
+button {
+    background: none;
+    padding: .5em 1em;
+}
+.contact {
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+}
+.contact-gradient {
+    border-image-source: var(--buttonoutline);
+}
+
+/* About Section CSS */
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+.jeff {
+    margin: 2em;
+    background-image: url('../../assets/about_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 2.5em;
+    border-radius: 15%;
+    box-shadow: 0 4px 8px 0 var(--dark), 0 6px 20px 0 var(--dark);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    color: var(--dark);
+    padding: 3em;
+}
+.content p {
+    color: var(--dark);
+}
+
+/* Services section css */
+
+.services_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+.services_wrapper h3{
+    margin: 1em 1em 3em 1em;
+}
+.home_services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px 0 var(--secondary), 0 4px 10px 0 var(--secondary);
+    margin: 1em;
+    background-color: var(--primary);
+    width: 30%;
+    border-radius: 10%;
+}
+.the_service {
+    box-shadow: 0 2px 6px 0 var(--secondary), 0 4px 10px 0 var(--secondary);
+    width: 100%;
+    border-radius: 10% 10% 0% 0%;
+}
+.service_name {
+    padding: .5em 1.5em;
+}
+
+/* Testimonials Section css */
+.testimonial_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 2em 1em;
+}
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 2em;
+    box-shadow: 0 4px 8px 0 var(--dark), 0 6px 10px 0 var(--accent);
+    margin: 1em 1em 2em 1em;
+}
+.quote, .author {
+    color: var(--light);
+    width: 250px;
+}
+
+/* Testimonial - Stars */
+.stars {
+  display: inline-block;
+  line-height: 1;
+  font-size: 1.5em;          /* Size of the stars */
+  color: var(--secondary);             /* Filled star color */
+}
+.stars .empty {
+  opacity: 0.10;              /* Faded look for un-filled stars */
+}
+.sr-only {                    /* Accessible text */
+  position: absolute;
+  left: -9999px;
+}
+
+/* Testimonial - Quotations */
+.quote {
+  display: block;
+  position: relative;
+  font-style: italic;
+  margin: 1em 0;
+  padding: 0.5em 1em;
+}
+
+.quote::before,
+.quote::after {
+  font-size: 2.5rem;
+  color: var(--accent);
+  font-weight: bold;
+  position: absolute;
+  font-family: serif;
+}
+
+.quote::before {
+  content: "“";
+  left: -0.5em;
+  top: -0.2em;
+}
+
+.quote::after {
+  content: "”";
+  right: -0.5em;
+  bottom: -0.2em;
+}

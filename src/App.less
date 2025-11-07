@@ -1,0 +1,49 @@
+
+@import './css/base/core.less';
+
+body {
+    background-color: var(--light);
+    #root {
+        .app_wrapper {
+            .flexcolumn();
+            background-color: var(--light);
+
+            header {
+                nav {
+                    span {
+                        a {
+                            font-family: var(--headerfont);
+                        }
+                    }
+                }
+            }
+
+            main {
+                .flexcolumn();
+                width: 100%;
+                
+                img {
+                    max-width: 400px;
+                }
+
+                .badlink {
+                    .flexcolumn();
+                    img {
+                        max-width: 600px;
+                    }
+                }
+            }
+            footer {
+                background: var(--primary);
+                h3 {
+                    color: var(--light);
+                    font-family: var(--headerfont);
+                }
+                h4, ul, li, h5, p, a {
+                    font-family: var(--bodyfont);
+                    color: var(--light);
+                }
+            }
+        }
+    }
+}

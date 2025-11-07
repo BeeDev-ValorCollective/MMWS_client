@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "rating": 2,
+    "quote": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, animi…",
+    "author": "Me",
+    "is_active": true
+  },
+  {
+    "id": 2,
+    "rating": 4,
+    "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid…",
+    "author": "Myself",
+    "is_active": true
+  },
+  {
+    "id": 3,
+    "rating": 5,
+    "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti minima…",
+    "author": "I",
+    "is_active": true
+  },
+  {
+    "id": 4,
+    "rating": 3,
+    "quote": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ipsum…",
+    "author": "Chris",
+    "is_active": true
+  },
+  {
+    "id": 5,
+    "rating": 4,
+    "quote": "Just testing",
+    "author": "Melissa",
+    "is_active": true
+  },
+  {
+    "id": 6,
+    "rating": 0,
+    "quote": "",
+    "author": "",
+    "is_active": false
+  },
+  {
+    "id": 7,
+    "rating": 0,
+    "quote": "",
+    "author": "",
+    "is_active": false
+  },
+  {
+    "id": 8,
+    "rating": 0,
+    "quote": "",
+    "author": "",
+    "is_active": false
+  }
+]
