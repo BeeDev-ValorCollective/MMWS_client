@@ -5,6 +5,12 @@ body {
   overflow-x: hidden;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* ——— Wrapper & title ——— */
 .contact-wrap {
   max-width: 1440px;
@@ -36,10 +42,9 @@ body {
   margin-bottom: 162.25px;
 }
 
+/* container only */
 .contact-link {
   text-align: center;
-  pointer-events: none;
-  cursor: default;
 }
 
 /* Top icons: exact on desktop, shrink on phones */
@@ -76,15 +81,21 @@ body {
   margin-top: 2px;
 }
 
-/* Remove underlines across all states */
-.contact-link a,
+/* Make top email/phone non-clickable  */
+.contact-link a {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none !important;
+  border: 0 !important;
+}
 .contact-link a:visited,
 .contact-link a:hover,
-.contact-link a:active {
+.contact-link a:active,
+.contact-link a:focus {
   text-decoration: none !important;
-  border: none;
-  outline: none;
+  border: 0 !important;
   color: #111 !important;
+  outline: none;
 }
 
 /* ——— Divider bar ——— */
@@ -261,7 +272,6 @@ body {
   white-space: nowrap;
   box-sizing: border-box;
 }
-
 .btn-accent-lg:hover {
   background: linear-gradient(#51565e, #51565e) padding-box,
     linear-gradient(180deg, #d8a31a 0%, #c75b12 34%) border-box;
@@ -309,14 +319,10 @@ body {
   .label.full {
     grid-column: 1 / 2;
   }
-
-  .input,
-  .textarea {
-    width: 100%;
-  }
 }
 
 /* ——— Desktop compact band (1136–1280px) ——— */
+/* Shrink BOTH map and form together + hard-bottom align */
 @media (min-width: 1136px) and (max-width: 1280px) {
   .lower-grid {
     grid-template-columns: 1fr 1fr;
@@ -327,26 +333,32 @@ body {
 
   .contact-area {
     height: 590px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
+  /* Map shrinks from 500 → 480 and is pushed to the bottom of the column */
   .map-frame {
     width: 480px;
     height: 480px;
     aspect-ratio: auto;
+    margin-top: auto;
   }
 
+  /* Form shrinks proportionally and keeps total height 590 */
   .form-card {
-    width: 556px;
+    width: 520px;
     height: 590px;
-    padding: 44px 59px 45px;
+    padding: 40px 44px;
   }
 
   .form-title {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
 
   .form-grid {
-    grid-template-columns: 100px 323px;
+    grid-template-columns: 100px 300px;
     column-gap: 20px;
     row-gap: 18px;
   }
@@ -359,12 +371,12 @@ body {
   }
 
   .input {
-    width: 323px;
+    width: 300px;
     height: 25px;
   }
 
   .textarea {
-    width: 323px;
+    width: 300px;
     height: 225px;
     grid-column: 2;
     justify-self: start;
@@ -372,14 +384,14 @@ body {
 
   .btn-row {
     margin-top: auto;
-    padding-top: 25px;
+    padding-top: 22px;
   }
 
   .btn-accent-lg {
-    width: 274px;
-    height: 66px;
-    border-radius: 50px;
-    font-size: 34px;
+    width: 260px;
+    height: 62px;
+    border-radius: 48px;
+    font-size: 32px;
   }
 }
 
@@ -394,12 +406,17 @@ body {
 
   .contact-area {
     height: 590px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
+  /* Map at full size and anchored to bottom */
   .map-frame {
     width: 500px;
     height: 500px;
     aspect-ratio: auto;
+    margin-top: auto;
   }
 
   .form-card {
