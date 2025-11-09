@@ -2,8 +2,9 @@ const PhoneLink = import.meta.env.VITE_LINK_PHONE || "#";
 const PhoneDisplay = import.meta.env.VITE_DISPLAY_PHONE || "Phone unavailable";
 const EmailLink = import.meta.env.VITE_LINK_EMAIL || "info@example.com";
 
-import EmailIcon from "../../assets/email_icon.png";
-import PhoneIcon from "../../assets/phone_icon.png";
+import "./ContactInfo.css";
+import EmailIcon from "/src/assets/email_icon.png";
+import PhoneIcon from "/src/assets/phone_icon.png";
 
 export default function ContactInfo() {
   return (
@@ -22,7 +23,7 @@ export default function ContactInfo() {
             loading="lazy"
           />
           <h3>E-Mail</h3>
-          <a href={EmailLink ? `mailto:${EmailLink}` : "#"}>{EmailLink}</a>
+          <span className="muted">{EmailLink}</span>
         </div>
 
         {/* Phone */}
@@ -34,7 +35,7 @@ export default function ContactInfo() {
             loading="lazy"
           />
           <h3>Text or Call</h3>
-          <a href={PhoneLink}>{PhoneDisplay}</a>
+          <span className="muted">{PhoneDisplay}</span>
         </div>
       </div>
     </section>

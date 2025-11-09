@@ -1,4 +1,5 @@
-import ServiceMap from "../../assets/map.png";
+import ServiceMap from "/src/assets/map.png";
+import "./ContactArea.css";
 
 export default function ContactArea() {
   return (
