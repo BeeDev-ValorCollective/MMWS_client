@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import "./ContactForm.css";
 
 const API_BASE =
@@ -18,13 +18,16 @@ export default function ContactForm() {
   const onChange = (e) =>
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
+  const canSubmit = useMemo(() => {
+    const hasAll = form.name.trim() && form.email.trim() && form.subject.trim();
+    const emailOK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email);
+    return Boolean(hasAll) && emailOK && !isSubmitting;
+  }, [form, isSubmitting]);
+
   const onSubmit = async (e) => {
     e.preventDefault();
 
-    if (!form.name.trim() || !form.email.trim() || !form.subject.trim()) {
-      setStatus({ type: "error", message: "Please fill in all fields." });
-      return;
-    }
+    if (!canSubmit) return;
 
     setIsSubmitting(true);
     setStatus({ type: "loading", message: "Sending your message..." });
@@ -73,19 +76,18 @@ export default function ContactForm() {
     <section className="form-card">
       <h2 className="form-title">Message Us:</h2>
 
-      {status.type !== "idle" && (
-        <div aria-live="polite" className="status-wrap">
-          {status.type === "loading" && (
-            <p className="status status-loading">{status.message}</p>
-          )}
-          {status.type === "success" && (
-            <p className="status status-success">{status.message}</p>
-          )}
-          {status.type === "error" && (
-            <p className="status status-error">{status.message}</p>
-          )}
-        </div>
-      )}
+      <div className="status-wrap" aria-live="polite" role="status">
+        {status.type === "loading" && (
+          <p className="status status-loading">{status.message}</p>
+        )}
+        {status.type === "success" && (
+          <p className="status status-success">{status.message}</p>
+        )}
+        {status.type === "error" && (
+          <p className="status status-error">{status.message}</p>
+        )}
+        {status.type === "idle" && <span className="status-spacer" />}
+      </div>
 
       <form
         className="form-grid"
@@ -138,12 +140,13 @@ export default function ContactForm() {
           rows={6}
         />
 
-        {/* Submit button */}
+        {/* Submit */}
         <div className="full btn-row">
           <button
             className="btn-accent-lg"
             type="submit"
-            disabled={isSubmitting}
+            disabled={!canSubmit}
+            aria-disabled={!canSubmit}
           >
             {isSubmitting ? "Sending..." : "Send Message"}
           </button>
