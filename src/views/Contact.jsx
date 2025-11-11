@@ -1,16 +1,17 @@
-import ContactInfo from '../components/Contact/ContactInfo'
-import ContactForm from '../components/Contact/ContactForm'
-import ContactArea from '../components/Contact/ContactArea'
+import ContactInfo from "../components/ContactComponents/ContactInfo/ContactInfo";
+import ContactForm from "../components/ContactComponents/ContactForm/ContactForm";
+import ContactArea from "../components/ContactComponents/ContactArea/ContactArea";
+import "../components/ContactComponents/ContactPage.css";
 
 export default function Contact() {
-
-    return(
-        <main>
-            <ContactInfo />
-            <div>
-                <ContactArea />
-                <ContactForm />
-            </div>
-        </main>
-    )
+  return (
+    <main className="contact-wrap">
+      <ContactInfo />
+      <div className="contact-divider" />
+      <div className="lower-grid">
+        <ContactArea />
+        <ContactForm />
+      </div>
+    </main>
+  );
 }
