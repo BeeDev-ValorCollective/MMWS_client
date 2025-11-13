@@ -44,6 +44,7 @@
   font-size: 34px;
   line-height: 1.15;
   color: #000;
+  margin: 0;
 }
 
 /* ----- INFO BANNER ----- */
@@ -59,37 +60,46 @@
   padding: 32px 20px;
 }
 
-/* Banner item base */
 .about-info-banner .banner-item {
   text-decoration: none;
-  border: none;
 }
 
-/* Banner text */
+/* Title text in banner */
 .about-info-banner .banner-item h3 {
   font-family: "Share Tech", sans-serif;
   font-size: 55px;
   font-weight: 400;
-  white-space: nowrap;
   color: #ffffff;
+  white-space: nowrap;
   text-align: center;
-  text-transform: none !important;
+  text-decoration: none;
+  text-transform: none;
+  border: none;
 }
 
+/* Subtitle text in banner */
 .about-info-banner .banner-item p {
   font-family: "Share Tech", sans-serif;
   font-size: 34px;
   font-weight: 400;
   color: #ffffff;
   text-align: center;
-  text-transform: none !important;
+  text-decoration: none;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
-.about-info-banner a,
-.about-info-banner a:hover,
-.about-info-banner a:focus,
-.about-info-banner a:active {
-  text-decoration: none !important;
-  border: none !important;
+.about-info-banner .banner-item a {
   color: #ffffff;
+  text-decoration: none;
+  border: none;
+}
+
+.about-info-banner .banner-item a:hover,
+.about-info-banner .banner-item a:focus,
+.about-info-banner .banner-item a:active {
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
 }
