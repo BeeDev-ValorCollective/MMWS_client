@@ -3,16 +3,14 @@ import Jeff from "../../assets/about.jpg";
 
 export default function AboutUs() {
   return (
-    <main className="about-page">
-      {/* Top card: image + text */}
+    <>
+      {/* HERO SECTION */}
       <section className="about-hero">
-        <div className="about-hero-image-wrap">
-          <img src={Jeff} alt="Jeff at Metal Man Welding Services" />
-        </div>
+        <img src={Jeff} alt="Jeff welding" className="about-img" />
 
-        <div className="about-hero-content">
-          <h2 className="about-hero-title">Jeff &amp; Bobbi Jo</h2>
-          <p className="about-hero-text">
+        <div className="about-card">
+          <h2 className="about-title">JEFF & BOBBI JO</h2>
+          <p className="about-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             rutrum dui non tincidunt interdum. Cras id vehicula nunc. Morbi
             placerat, augue a volutpat aliquet, neque massa lacinia odio, eu
@@ -24,30 +22,28 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Bottom gradient banner */}
-      <section className="about-banner">
-        <div className="about-banner-grid">
-          <div className="about-banner-item">
-            <p className="about-banner-heading">55 + Years</p>
-            <p className="about-banner-sub">of Experience</p>
-          </div>
+      {/* INFO BANNER */}
+      <section className="about-info-banner">
+        <div className="banner-item">
+          <h3>55 + Years</h3>
+          <p>of Experience</p>
+        </div>
 
-          <div className="about-banner-item">
-            <p className="about-banner-heading">Mobile Welding</p>
-            <p className="about-banner-sub">Services Across NC</p>
-          </div>
+        <div className="banner-item">
+          <h3>Mobile Welding</h3>
+          <p>Services Across NC</p>
+        </div>
 
-          <div className="about-banner-item">
-            <p className="about-banner-heading">Custom Builds</p>
-            <p className="about-banner-sub">&amp; Custom Metalwork</p>
-          </div>
+        <div className="banner-item">
+          <h3>Custom Builds</h3>
+          <p>& Custom Metalwork</p>
+        </div>
 
-          <div className="about-banner-item">
-            <p className="about-banner-heading">Veteran Owned</p>
-            <p className="about-banner-sub">&amp; Family Run</p>
-          </div>
+        <div className="banner-item">
+          <h3>Veteran Owned</h3>
+          <p>& Family Run</p>
         </div>
       </section>
-    </main>
+    </>
   );
 }
