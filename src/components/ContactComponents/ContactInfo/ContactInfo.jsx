@@ -23,7 +23,12 @@ export default function ContactInfo() {
             loading="lazy"
           />
           <h3>E-Mail</h3>
-          <span className="muted">{EmailLink}</span>
+          <a
+            href={`mailto:${EmailLink}`}
+            aria-label={`Send an email to ${EmailLink}`}
+          >
+            {EmailLink}
+          </a>
         </div>
 
         {/* Phone */}
@@ -35,7 +40,12 @@ export default function ContactInfo() {
             loading="lazy"
           />
           <h3>Text or Call</h3>
-          <span className="muted">{PhoneDisplay}</span>
+          <a
+            href={`tel:${PhoneLink}`}
+            aria-label={`Call or text ${PhoneDisplay}`}
+          >
+            {PhoneDisplay}
+          </a>
         </div>
       </div>
     </section>
