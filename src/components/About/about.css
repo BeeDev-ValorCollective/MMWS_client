@@ -54,8 +54,8 @@ body {
 .about-text {
   flex: 1;
   font-family: "Roboto", sans-serif;
-  font-size: 34px;
-  line-height: 1.15;
+  font-size: 30px; /* was 34px */
+  line-height: 1.25; /* slightly more breathing room */
   color: #000;
   margin: 0;
 }
@@ -80,7 +80,7 @@ body {
 /* Title text in banner */
 .about-info-banner .banner-item h3 {
   font-family: "Share Tech", sans-serif;
-  font-size: 55px;
+  font-size: 48px; /* was 55px */
   font-weight: 400;
   color: #ffffff;
   white-space: nowrap;
@@ -93,7 +93,7 @@ body {
 /* Subtitle text in banner */
 .about-info-banner .banner-item p {
   font-family: "Share Tech", sans-serif;
-  font-size: 34px;
+  font-size: 26px; /* was 34px */
   font-weight: 400;
   color: #ffffff;
   text-align: center;
